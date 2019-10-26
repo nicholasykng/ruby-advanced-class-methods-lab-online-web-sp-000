@@ -42,6 +42,6 @@ end
 end
 
 def self.alphabetical
-  return @@all.sort
+  @@all.sort
 end
 end
