@@ -42,6 +42,7 @@ end
 end
 
 def self.alphabetical
-  self.all.sort
+  abc = self.all.sort
+  return abc
 end
 end
