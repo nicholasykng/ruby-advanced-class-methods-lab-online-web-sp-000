@@ -56,6 +56,7 @@ def self.create_from_filename(name)
   song = self.new
   song << if self.new_from_filename(name)
 end
+end
 
 
 
