@@ -42,7 +42,7 @@ end
 end
 
 def self.alphabetical
-  self.all.sort {|x| x.name }
+  self.all.sort_by{|x| x.name }
   
 end
 end
