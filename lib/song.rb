@@ -54,7 +54,7 @@ end
 
 def self.create_from_filename(name)
   song = self.new
-  song << self.new_from_filename(name)
+  song << if self.new_from_filename(name)
 end
 
 
