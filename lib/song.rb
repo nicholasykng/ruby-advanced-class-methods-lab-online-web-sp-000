@@ -14,4 +14,9 @@ class Song
     @@all << song
     return song
   end
+def self.new_by_name
+  song = self.new
+  song.name = name
+  @@all << song
+  
 end
