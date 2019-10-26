@@ -45,14 +45,10 @@ def self.alphabetical
   self.all.sort_by{|x| x.name }
 end
 
-def self.new_from_filename(title)
-  data = title.split("-")
-  artist_name = data[0]
-  x = data[1].join(",").split(".")
-  name = x[0]
+def self.new_from_filename(name)
   song = self.new
-  song.name = name
-  song.artist_name = artist_name
+  song.name = name.split("-")[1].chomp(".mp3")
+  song.artist_name = name.split("-")[0]
   song
 end
 
