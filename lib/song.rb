@@ -57,7 +57,9 @@ def self.create_from_filename(name)
   @@all << self.new_from_filename(name)
 end
 
-
+def self.destroy_all
+  @@all.clear
+end  
 
 
 end
